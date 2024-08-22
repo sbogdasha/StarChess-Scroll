@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 
 const Header = () => {
-    // Функція, яка визначає, чи елемент виглядає на екрані
+    
   function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
@@ -18,7 +18,6 @@ const Header = () => {
     );
   }
 
-  // JavaScript
 function checkElementsInView() {
   const elements = document.querySelectorAll(".phase--r, .phase--l");
 
@@ -30,12 +29,10 @@ function checkElementsInView() {
 }
 
 
-  // Додайте обробник події прокрутки сторінки
   window.addEventListener("scroll", () => {
     checkElementsInView();
   });
 
-  // Викликати функцію при завантаженні сторінки для перевірки початкового стану
   window.addEventListener("load", () => {
     checkElementsInView();
   });

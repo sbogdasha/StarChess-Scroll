@@ -13,10 +13,10 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Після завантаження сторінки приховуємо анімацію
+    
     setTimeout(() => {
       setLoading(false);
-    }, 2000); // Штучна затримка для емуляції завантаження (можете видалити цю стрічку у реальному застосунку)
+    }, 2000); 
   }, []);
 
   return (

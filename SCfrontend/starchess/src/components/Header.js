@@ -6,8 +6,6 @@ import Grid from '@mui/material/Grid';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import Brightness4Icon from '@mui/icons-material/Brightness4';
 import { Web3Provider } from '@ethersproject/providers';
 
 const Header = () => {
@@ -22,15 +20,12 @@ const Header = () => {
         return;
       }
 
-      // Request access to MetaMask
       const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
       const userAddress = accounts[0];
 
-      // Connect to the MetaMask provider
-      const ethersProvider = new Web3Provider(window.ethereum); // Create Web3Provider instance
+      const ethersProvider = new Web3Provider(window.ethereum); 
       setProvider(ethersProvider);
 
-      // Set user address and connection status
       setAddress(userAddress);
       setIsConnected(true);
     } catch (error) {
@@ -38,18 +33,23 @@ const Header = () => {
     }
   };
 
-  // Persist connection on reload
   useEffect(() => {
+    const handleAccountsChanged = (accounts) => {
+      if (accounts.length > 0) {
+        setAddress(accounts[0]);
+        setIsConnected(true);
+      } else {
+        setAddress('');
+        setIsConnected(false);
+      }
+    };
+
     if (window.ethereum) {
-      window.ethereum.on('accountsChanged', (accounts) => {
-        if (accounts.length > 0) {
-          setAddress(accounts[0]);
-          setIsConnected(true);
-        } else {
-          setAddress('');
-          setIsConnected(false);
-        }
-      });
+      window.ethereum.on('accountsChanged', handleAccountsChanged);
+
+      return () => {
+        window.ethereum.removeListener('accountsChanged', handleAccountsChanged);
+      };
     }
   }, []);
 

@@ -1,26 +1,44 @@
 .profile-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 82vh;
-  }
-  
-  .mint-btn {
-    text-transform: none !important;
-    border-radius: 1rem;
-    margin-left: 1rem;
-    font-family: Saira;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 45px;
-    letter-spacing: 1.6px;
-    padding: 0.1rem 1rem !important;
-    margin: 0 0.3rem;
-    transition: color 0.3s ease; 
-  }
-  
-  .mint-btn:hover {
-    background-color: #EC796B !important;
-    color: white; 
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 73.4vh;
+  justify-content: center; 
+}
+
+.profile-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+}
+
+.nft-display {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.nft-display img {
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.mint-btn {
+  text-transform: none !important;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  font-family: Saira;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 1.6px;
+  padding: 0.1rem 1rem !important;
+  margin: 0 0.3rem;
+  transition: color 0.3s ease; 
+}
+
+.mint-btn:hover {
+  background-color: #EC796B !important;
+  color: white; 
+}

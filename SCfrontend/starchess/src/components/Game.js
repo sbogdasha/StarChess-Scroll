@@ -2,7 +2,7 @@ import { useState, useMemo, useCallback, useEffect } from "react";
 import { Chessboard } from "react-chessboard";
 import { Chess } from "chess.js";
 import CustomDialog from "./CustomDialog";
-import Grid from '@mui/material/Grid'; // Import Material-UI Grid
+import Grid from '@mui/material/Grid'; 
 
 
 function Game({ players, room, orientation, cleanup }) {

@@ -15,7 +15,7 @@ const Footer = () => {
       </Link>
       <div className='footer__content'>
         <div className='socials'>
-          <IconButton className='icon-div' color="inherit" href="https://github.com">
+          <IconButton className='icon-div' color="inherit" href="https://github.com/sbogdasha/StarChess-Scroll">
             <GitHubIcon className='icon-svg' />
           </IconButton>
           <IconButton className='icon-div' color="inherit" href="https://twitter.com">

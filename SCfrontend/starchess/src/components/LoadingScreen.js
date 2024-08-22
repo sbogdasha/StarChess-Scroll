@@ -7,7 +7,7 @@ const LoadingScreen = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000); // Після завантаження сторінки приховуємо анімацію (можете змінити час за необхідністю)
+    }, 2000); 
 
     return () => {
       setLoading(true);
