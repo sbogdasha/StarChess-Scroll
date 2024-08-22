@@ -1,0 +1,33 @@
+.pvc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1900px;
+    height: 100vh;
+}
+
+.chessboard {
+    width: 40rem !important;
+    border: #CECEDA solid 1 px !important;
+    border-radius: 3rem !important;
+    padding-bottom: 1rem !important;
+    justify-content: center;
+}
+
+.btn {
+    font-family: 'Kumbh Sans', sans-serif !important;
+    font-weight: 400 !important;
+    background-color: #0C0C4F !important;
+    border: #CECEDA solid 1px !important;
+    border-radius: 1rem !important;
+    padding: 0.2rem 1rem;
+    margin: 2rem;
+    cursor: "pointer";
+    text-transform: none !important;
+} 
+
+.btn:hover {
+    background-color: #EC796B !important;
+}
+

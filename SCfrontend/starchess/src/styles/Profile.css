@@ -1,0 +1,26 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 82vh;
+  }
+  
+  .mint-btn {
+    text-transform: none !important;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    font-family: Saira;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 1.6px;
+    padding: 0.1rem 1rem !important;
+    margin: 0 0.3rem;
+    transition: color 0.3s ease; 
+  }
+  
+  .mint-btn:hover {
+    background-color: #EC796B !important;
+    color: white; 
+  }

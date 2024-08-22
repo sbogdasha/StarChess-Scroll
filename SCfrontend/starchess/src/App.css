@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Saira:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+.app {
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  background: linear-gradient(0deg, #292D3C 0.28%, #121212 99.66%);
+}
+
+main {
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Додайте стилі для дошки та повідомлення про кінець гри */
+.chessboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-over {
+  margin-top: 10px;
+  font-size: 24px;
+  color: red;
+}
+
+#PlayVsStockfish {
+  width: 60%;
+}

@@ -1,0 +1,73 @@
+.header {
+  max-width: 1920px;
+  background: transparent !important;
+  height: 7rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  box-shadow: none !important;
+  right: auto !important;
+}
+
+.header__content {
+  margin-top: 1rem;
+}
+
+.header img {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  width: 100%;
+}
+
+.header .MuiToolbar-root {
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+.header .MuiGrid-root {
+  justify-content: space-evenly;
+}
+
+.header .MuiButton-root {
+  font-family: Saira;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 1.6px;
+  padding: 0.1rem 1rem !important;
+  margin: 0 0.3rem;
+  transition: color 0.3s ease; 
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: none !important;
+}
+
+a:hover {
+  color: #EC796B !important;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+}
+
+.pages {
+  display: inline !important;
+  width: 300rem;
+}
+
+.connect {
+  justify-content: flex-end !important;
+}
+
+.connect__btn {
+  text-transform: none !important;
+  border-radius: 1rem;
+  margin-left: 1rem;
+}
+
+.connect__btn:hover {
+  background-color: #EC796B !important;
+  color: white; 
+}

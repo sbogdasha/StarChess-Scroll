@@ -1,0 +1,50 @@
+.footer {
+    max-width: 1920px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.copy {
+    color: #FFF;
+    font-family: Saira;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 178.571% */
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.socials {
+    width: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20%;
+}
+
+.icon-div {
+    width: 3rem !important;
+    height: 3rem !important;
+    background-color: #FAFAFA !important;
+    border-radius: 100% !important;
+
+}
+
+.icon-div > svg {
+    font-size: 36px;
+}
+
+.icon-svg {
+    font-size: 36px;
+    padding-right: 45%;
+}
