@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Hardhat files
+artifacts/
+cache/
+
+# Environment variables
+.env
+
+# Hardhat generated contracts and build artifacts
+coverage/
+coverage.json
+cache/
+artifacts/
+typechain/
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
